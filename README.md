@@ -1,6 +1,6 @@
 # pulp-smart-proxy
 
-A Pulp plugin to support hosting your own smrt.
+A Pulp plugin to support being a Foreman Smart Proxy.
 
 For more information, please see the [documentation](docs/index.md) or the [Pulp project page](https://pulpproject.org/).
 

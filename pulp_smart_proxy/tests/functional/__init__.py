@@ -1,1 +1,1 @@
-"""Tests for smrt plugin."""
+"""Tests for smart_proxy plugin."""

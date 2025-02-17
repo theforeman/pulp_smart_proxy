@@ -22,7 +22,7 @@ disabled_redis_runners: []
 docker_fixtures: false
 flake8: true
 flake8_ignore: []
-github_org: theforeman
+github_org: evgeni
 latest_release_branch: null
 lint_requirements: true
 os_required_packages: []

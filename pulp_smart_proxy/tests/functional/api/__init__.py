@@ -1,1 +1,1 @@
-"""Tests that communicate with smrt plugin via the v3 API."""
+"""Tests that communicate with smart_proxy plugin via the v3 API."""
