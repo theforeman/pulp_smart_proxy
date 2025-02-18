@@ -69,7 +69,7 @@ VARSYAML
 
 cat >> vars/main.yaml << VARSYAML
 pulp_env: {}
-pulp_settings: null
+pulp_settings: {"smart_proxy_rhsm_url": "https://rhsm.example.com/rhsm"}
 pulp_scheme: https
 pulp_default_container: ghcr.io/pulp/pulp-ci-centos9:latest
 VARSYAML

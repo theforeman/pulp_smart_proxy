@@ -1,6 +1,4 @@
-"""
-Check `Plugin Writer's Guide`_ for more details.
-
-.. _Plugin Writer's Guide:
-    https://pulpproject.org/pulpcore/docs/dev/
-"""
+SMART_PROXY_MIRROR = False
+SMART_PROXY_AUTH_USERNAME = None
+SMART_PROXY_AUTH_PASSWORD = None
+SMART_PROXY_AUTH_METHODS = ["client_certificate"]
