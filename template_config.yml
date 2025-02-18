@@ -27,11 +27,11 @@ latest_release_branch: null
 lint_requirements: true
 os_required_packages: []
 parallel_test_workers: 8
-plugin_app_label: smrt
+plugin_app_label: smart_proxy
 plugin_default_branch: develop
 plugin_name: pulp_smart_proxy
 plugins:
-- app_label: smrt
+- app_label: smart_proxy
   name: pulp_smart_proxy
 post_job_template: null
 pre_job_template: null
