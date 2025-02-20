@@ -32,9 +32,9 @@ class FeaturesV2View(APIView):
         operation_id="featuresv2_read",
     )
     def get(self, request):
-        # there is no setting for the API url
+        # there is no global setting for the API url
         # not adding /pulp/api/v3 here as Katello does so on its own
-        pulp_url = request.build_absolute_uri("/")
+        pulp_url = settings.SMART_PROXY_PULP_URL or request.build_absolute_uri("/")
         # CONTENT_ORIGIN can be None, guess based on the API url then
         content_origin = settings.CONTENT_ORIGIN or pulp_url
         capabilities = [app.label for app in pulp_plugin_configs()]
