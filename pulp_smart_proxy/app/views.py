@@ -69,5 +69,10 @@ class VersionView(APIView):
         operation_id="version_read",
     )
     def get(self, request):
-        data = {"version": get_plugin_config("smart_proxy").version}
+        data = {
+            "version": get_plugin_config("smart_proxy").version,
+            "modules": {
+                "pulpcore": get_plugin_config("smart_proxy").version,
+            },
+        }
         return Response(data)
