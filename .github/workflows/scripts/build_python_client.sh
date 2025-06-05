@@ -40,8 +40,8 @@ site_name: PulpSmartProxy Client
 site_description: SmartProxy bindings
 site_author: Pulp Team
 site_url: https://docs.pulpproject.org/pulp_smart_proxy_client/
-repo_name: evgeni/pulp_smart_proxy
-repo_url: https://github.com/evgeni/pulp_smart_proxy
+repo_name: theforeman/pulp_smart_proxy
+repo_url: https://github.com/theforeman/pulp_smart_proxy
 theme: readthedocs
 DOCSYAML
 

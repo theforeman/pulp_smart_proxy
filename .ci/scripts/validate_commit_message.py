@@ -49,7 +49,7 @@ if blocking_matches:
     sys.exit("This PR is not ready for consumption.")
 
 g = Github(os.environ.get("GITHUB_TOKEN"))
-repo = g.get_repo("evgeni/pulp_smart_proxy")
+repo = g.get_repo("theforeman/pulp_smart_proxy")
 
 
 def check_status(issue):
