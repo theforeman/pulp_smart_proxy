@@ -11,7 +11,7 @@ version = "0.0.0.dev"
 description = "pulp-smart-proxy plugin for the Pulp Project"
 readme = "README.md"
 authors = [
-  {name="AUTHOR", email="author@email.here"},
+  {name="The Foreman Project"},
 ]
 classifiers = [
   "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
@@ -30,11 +30,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://example.com"
-Documentation = "https://example.com"
+Homepage = "https://theforeman.org"
 Repository = "https://github.com/theforeman/pulp_smart_proxy"
 "Bug Tracker" = "https://github.com/theforeman/pulp_smart_proxy/issues"
-Changelog = "https://example.com/changes/"
+Changelog = "https://github.com/theforeman/pulp_smart_proxy/blob/develop/CHANGES.md"
 
 
 [project.entry-points."pulpcore.plugin"]
