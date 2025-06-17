@@ -6,7 +6,7 @@ class PulpSmartProxyPluginAppConfig(PulpPluginAppConfig):
 
     name = "pulp_smart_proxy.app"
     label = "smart_proxy"
-    version = "0.0.0"
+    version = "0.0.1.dev"
     python_package_name = "pulp_smart_proxy"
     domain_compatible = True
 
