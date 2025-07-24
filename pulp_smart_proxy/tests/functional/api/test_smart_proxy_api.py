@@ -17,7 +17,7 @@ def test_features_v2(pulp_api_v3_url):
     assert "pulpcore" in r.json()
 
 
-def test_features_v2_with_rhsm_url(pulp_api_v3_url):
+def test_features_v2_without_rhsm_url(pulp_api_v3_url):
     r = requests.get(urljoin(pulp_api_v3_url, "smart_proxy/v2/features"))
     features = r.json()
-    assert features["pulpcore"]["settings"]["rhsm_url"] == "https://rhsm.example.com/rhsm"
+    assert "rhsm_url" not in features["pulpcore"]["settings"]

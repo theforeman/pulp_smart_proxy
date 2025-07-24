@@ -49,12 +49,14 @@ class FeaturesV2View(APIView):
                     "username": settings.SMART_PROXY_AUTH_USERNAME,
                     "password": settings.SMART_PROXY_AUTH_PASSWORD,
                     "client_authentication": settings.SMART_PROXY_AUTH_METHODS,
-                    "rhsm_url": settings.SMART_PROXY_RHSM_URL,
                 },
                 "state": "running",
                 "capabilities": capabilities,
             }
         }
+
+        if settings.SMART_PROXY_RHSM_URL:
+            data["pulpcore"]["settings"]["rhsm_url"] = settings.SMART_PROXY_RHSM_URL
 
         return Response(data)
 
