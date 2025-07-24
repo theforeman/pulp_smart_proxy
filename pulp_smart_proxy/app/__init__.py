@@ -9,7 +9,3 @@ class PulpSmartProxyPluginAppConfig(PulpPluginAppConfig):
     version = "0.2.0.dev"
     python_package_name = "pulp_smart_proxy"
     domain_compatible = True
-
-    def ready(self):
-        super().ready()
-        from . import checks
