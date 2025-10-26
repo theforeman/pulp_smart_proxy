@@ -21,10 +21,10 @@ rm -rf "pulp_smart_proxy-client"
 ./gen-client.sh "../pulp_smart_proxy/smart_proxy-api.json" "smart_proxy" python "pulp_smart_proxy"
 
 pushd pulp_smart_proxy-client
-python setup.py sdist bdist_wheel --python-tag py3
+python -m build
 
 twine check "dist/pulp_smart_proxy_client-"*"-py3-none-any.whl"
-twine check "dist/pulp_smart_proxy-client-"*".tar.gz"
+twine check "dist/pulp_smart_proxy_client-"*".tar.gz"
 
 tar cvf "../../pulp_smart_proxy/smart_proxy-python-client.tar" ./dist
 
