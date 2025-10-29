@@ -26,11 +26,20 @@ actions:
     - bash -c "ls -1t ls dist/*.tar.gz | head -n1"
 
 jobs:
-  - job: copr_build
+  - &copr
+    job: copr_build
     trigger: pull_request
     targets:
       rhel-9: {}
       rhel-10: {}
+
+  - <<: *copr
+    trigger: commit
+    branch: develop
+    owner: '@theforeman'
+    project: develop
+    targets:
+      - rhel-9
 
 srpm_build_deps:
   - wget
