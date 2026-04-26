@@ -1,5 +1,6 @@
-import requests
 from urllib.parse import urljoin
+
+import requests
 
 
 def test_version(pulp_api_v3_url):
