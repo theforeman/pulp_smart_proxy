@@ -5,7 +5,7 @@ from drf_spectacular.utils import extend_schema
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from pulpcore.app.apps import pulp_plugin_configs, get_plugin_config
+from pulpcore.app.apps import get_plugin_config, pulp_plugin_configs
 
 
 class FeaturesView(APIView):

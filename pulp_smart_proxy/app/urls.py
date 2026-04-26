@@ -1,7 +1,7 @@
 from django.conf import settings
-from django.urls import path, include
+from django.urls import include, path
 
-from .views import FeaturesView, FeaturesV2View, VersionView
+from .views import FeaturesV2View, FeaturesView, VersionView
 
 if settings.DOMAIN_ENABLED:
     V3_API_ROOT = settings.V3_DOMAIN_API_ROOT_NO_FRONT_SLASH
