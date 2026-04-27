@@ -5,7 +5,10 @@ from drf_spectacular.utils import extend_schema
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from pulpcore.app.apps import get_plugin_config, pulp_plugin_configs
+try:
+    from pulpcore.plugin.apps import get_plugin_config, pulp_plugin_configs
+except ImportError:
+    from pulpcore.app.apps import get_plugin_config, pulp_plugin_configs  # noqa
 
 
 class FeaturesView(APIView):
