@@ -8,6 +8,14 @@
 
 [//]: # (towncrier release notes start)
 
+## 0.5.0 (2026-09-14) {: #0.5.0 }
+
+#### Features {: #0.5.0-feature }
+
+- - Add support for Pulpcore 3.117
+
+---
+
 ## 0.4.0 (2026-04-14) {: #0.4.0 }
 
 No significant changes.
