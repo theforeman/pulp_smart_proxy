@@ -23,7 +23,7 @@ if [ -f .github/workflows/scripts/pre_before_install.sh ]; then
   source .github/workflows/scripts/pre_before_install.sh
 fi
 
-COMPONENT_VERSION="$(bump-my-version show current_version | tail -n -1 | python -c 'from packaging.version import Version; print(Version(input()))')"
+COMPONENT_VERSION="$(python -c 'import tomllib; from packaging.version import Version; print(Version(tomllib.load(open("pyproject.toml", "rb"))["tool"]["bumpversion"]["current_version"]))')"
 COMPONENT_SOURCE="./pulp_smart_proxy/dist/pulp_smart_proxy-${COMPONENT_VERSION}-py3-none-any.whl"
 
 if [[ "$TEST" = "pulp" ]]; then
